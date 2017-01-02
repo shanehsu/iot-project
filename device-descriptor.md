@@ -11,45 +11,41 @@
 
 ```json
 {
-  "hardware_info": {
-    "manufacture": "Dyson",
-    "manufactured": "2012-04-23T18:25:43.511Z"
-  },
-  "uuid": "bbbbc817-9fcc-42b2-b52d-d6851e38b1dd",
-  "type": "fan",
-  "traits": [ "motorized", "plugged", "wifi_enabled" ],
-  "properties": [
-    {
-      "name": "standby",
-      "data": "boolean",
-      "type": "active",
-      "text": {
-        "property_name": "電源",
-        "value_true": "待機中",
-        "value_false": "使用中"
-      }
-    },
-    {
-      "name": "speed",
-      "data": "number",
-      "type": "active",
-      "metadata": {
-        "min_value": 1,
-        "max_value": 13
-      },
-      "text": {
-        "property_name": "風速"
-      }
-    },
-    {
-      "name": "consumption",
-      "data": "number",
-      "type": "passive",
-      "text": {
-        "property_name": "耗電量"
-      }
-    }
-  ]
+	"hardware_info": {
+		"manufacture": "Dyson",
+		"manufactured": "2012-04-23T18:25:43.511Z"
+	},
+	"uuid": "bbbbc817-9fcc-42b2-b52d-d6851e38b1dd",
+	"type": "fan",
+	"traits": ["motorized", "plugged", "wifi_enabled"],
+	"properties": [{
+		"name": "standby",
+		"data": "boolean",
+		"type": "active",
+		"text": {
+			"property_name": "電源",
+			"value_true": "待機中",
+			"value_false": "使用中"
+		}
+	}, {
+		"name": "speed",
+		"data": "number",
+		"type": "active",
+		"metadata": {
+			"min_value": 1,
+			"max_value": 13
+		},
+		"text": {
+			"property_name": "風速"
+		}
+	}, {
+		"name": "consumption",
+		"data": "number",
+		"type": "passive",
+		"text": {
+			"property_name": "耗電量"
+		}
+	}]
 }
 ```
 每一部裝置，將會記錄自己的描述檔，並在配對時傳送給伺服器或是使用者的裝置。
@@ -58,63 +54,56 @@
 
 ```json
 {
-  "_id": ObjectId("5349b4ddd2781d08c09890f3"),
-  "name": "電風扇",
-  "location": "主臥房",
-  "addresses": [
-    {
-      "type": "local-name",
-      "address": "dyson-fan.local"
-    },
-    {
-      "type": "local-ip",
-      "address": "192.168.1.130"
-    }
-  ],
-  "external_proxy": {
-    "address": "4.4.12.30",
-    "port": 1234
-  },
-  "device_info": {
-    "hardware_info": {
-      "manufacture": "Dyson",
-      "manufactured": "2012-04-23T18:25:43.511Z"
-    },
-    "uuid": "bbbbc817-9fcc-42b2-b52d-d6851e38b1dd",
-    "type": "fan",
-    "traits": [ "motorized", "plugged", "wifi_enabled" ],
-    "properties": [
-      {
-        "name": "standby",
-        "data": "boolean",
-        "type": "active",
-        "text": {
-          "property_name": "電源",
-          "value_true": "待機中",
-          "value_false": "使用中"
-        }
-      },
-      {
-        "name": "speed",
-        "data": "number",
-        "type": "active",
-        "metadata": {
-          "min_value": 1,
-          "max_value": 13
-        },
-        "text": {
-          "property_name": "風速"
-        }
-      },
-      {
-        "name": "consumption",
-        "data": "number",
-        "type": "passive",
-        "text": {
-          "property_name": "耗電量"
-        }
-      }
-    ]
-  }
+	"_id": "5349b4ddd2781d08c09890f3",
+	"name": "電風扇",
+	"location": "主臥房",
+	"addresses": [{
+		"type": "local-name",
+		"address": "dyson-fan.local"
+	}, {
+		"type": "local-ip",
+		"address": "192.168.1.130"
+	}],
+	"external_proxy": {
+		"address": "4.4.12.30",
+		"port": 1234
+	},
+	"device_info": {
+		"hardware_info": {
+			"manufacture": "Dyson",
+			"manufactured": "2012-04-23T18:25:43.511Z"
+		},
+		"uuid": "bbbbc817-9fcc-42b2-b52d-d6851e38b1dd",
+		"type": "fan",
+		"traits": ["motorized", "plugged", "wifi_enabled"],
+		"properties": [{
+			"name": "standby",
+			"data": "boolean",
+			"type": "active",
+			"text": {
+				"property_name": "電源",
+				"value_true": "待機中",
+				"value_false": "使用中"
+			}
+		}, {
+			"name": "speed",
+			"data": "number",
+			"type": "active",
+			"metadata": {
+				"min_value": 1,
+				"max_value": 13
+			},
+			"text": {
+				"property_name": "風速"
+			}
+		}, {
+			"name": "consumption",
+			"data": "number",
+			"type": "passive",
+			"text": {
+				"property_name": "耗電量"
+			}
+		}]
+	}
 }
 ```
