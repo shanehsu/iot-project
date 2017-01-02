@@ -38,7 +38,7 @@
         "max_value": 13
       },
       "text": {
-        "property_name": "風速",
+        "property_name": "風速"
       }
     },
     {
@@ -103,7 +103,7 @@
           "max_value": 13
         },
         "text": {
-          "property_name": "風速",
+          "property_name": "風速"
         }
       },
       {
